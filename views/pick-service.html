@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+    
+        <!-- FONTS -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <!-- FONTS -->
+    
+        <!-- Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <!-- Bootstrap -->
+    
+        <!-- CSS -->
+        <link rel="stylesheet" href="./styles/fonts.css">
+        <link rel="stylesheet" href="./styles/pick-service-style.css">
+        <!-- CSS -->
+        
+    </head>
+<body>
+    
+    <style>
+        body{
+            overflow-x: hidden;
+        }
+    </style>
+
+    <div class="container">
+        <div class="row d-flex flex-column px-5 pt-4">
+            <div class="col">
+                <img src="./assets/logoipsum-291.svg" width="50" alt="">
+                <h4 class="roboto-bold">MainDorCoiffure</h4>
+            </div>
+            <div class="col pt-5">
+                <h1 class="bebas-neue-regular">Pick A Service</h1>
+            </div>
+
+            <div class="col pt-5 pb-3">
+                <h3 class="roboto-bold" >Coupes</h3>
+            </div>
+            <div class="container-fluid">
+
+                <div class="row service-box rounded-4 w-50">
+                    <div class="col">
+                        <p class="mb-0 fs-5">Normal Cut</p>
+                        <p style="font-size: small;color:#a1a1a1;">45 mins</p>
+                        <p style="font-size:larger" >35$</p>
+                    </div>
+                    <div class="col d-flex align-items-center justify-content-end">
+                        <div class="plus" id="" >
+                        </div>
+                        <div class="checkmark" style="display: none;" ></div>
+                    </div>
+                </div>
+                <div class="row service-box rounded-4 w-50 my-5">
+                    <div class="col">
+                        <p class="mb-0 fs-5">Special Cut</p>
+                        <p style="font-size: small;color:#a1a1a1;">45 mins</p>
+                        <p style="font-size:larger" >35$</p>
+                    </div>
+                    <div class="col d-flex align-items-center justify-content-end">
+                        <div class="plus" id="" >
+                        </div>
+                        <div class="checkmark" style="display: none;" ></div>
+                    </div>
+                </div>
+                <div class="row service-box rounded-4 w-50">
+                    <div class="col">
+                        <p class="mb-0 fs-5">Old Cut</p>
+                        <p style="font-size: small;color:#a1a1a1;">45 mins</p>
+                        <p style="font-size:larger" >35$</p>
+                    </div>
+                    <div class="col d-flex align-items-center justify-content-end">
+                        <div class="plus" id="" >
+                        </div>
+                        <div class="checkmark" style="display: none;" ></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col pt-5 pb-3">
+                <h3 class="roboto-bold" >Specials</h3>
+            </div>
+            <div class="container-fluid">
+
+                <div class="row service-box rounded-4 w-50" style="margin-bottom: 7em;">
+                    <div class="col">
+                        <p class="mb-0 fs-5">Colors</p>
+                        <p style="font-size: small;color:#a1a1a1;">50 mins</p>
+                        <p style="font-size:larger">50$</p>
+                    </div>
+                    <div class="col d-flex align-items-center justify-content-end">
+                        <div class="plus" id="" >
+                        </div>
+                        <div class="checkmark" style="display: none;" ></div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container">
+        <div class="row px-5 pt-3 price-info w-50">
+            <div class="col">
+                <p style="margin-bottom: 0px;" >Total:</p>
+                <p class="roboto-bold" >85$</p>
+            </div>
+            <div class="col d-flex align-items-center justify-content-end">
+                <button class="btn btn-primary">Continue</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- BOOTSTRAP -->
+
+    <!-- JQUERY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- JQUERY -->
+     
+    <script>
+        $(document).ready(function(){
+            $("p").addClass("roboto-regular");
+            
+            $('.plus').click(function( ) {
+                var parent = $(this).parent();
+                parent.find('.plus').css("display", 'none');
+                parent.find('.checkmark').css("display", 'inline');
+            });
+
+            $('.checkmark').click(function( ) {
+                var parent = $(this).parent();
+                parent.find('.plus').css("display", 'inline');
+                parent.find('.checkmark').css("display", 'none');
+            });
+        });
+    </script>
+
+</body>
+</html>

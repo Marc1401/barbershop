@@ -1,0 +1,88 @@
+
+/* Plus Button */
+.plus {
+    position: relative;
+    width:20px;
+    height:20px;
+    background:#000;
+    border-radius:20%;
+    cursor:pointer;
+  }
+  .plus:hover{
+    background-color:green;
+  }
+  
+  .plus:before,
+  .plus:after {
+    content: "";
+    position:absolute;
+    background:#ffff;
+  }
+  
+  .plus:before {
+    left:50%;
+    top:4px;
+    bottom:4px;
+    width:2px;
+    transform:translateX(-50%);
+  }
+  
+  .plus:after {
+    top:50%;
+    left:4px;
+    right:4px;
+    height:2px;
+    transform:translateY(-50%);
+  }
+/* Plus Button */
+
+/* Checkmark Button */
+.checkmark {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background: blue;
+    border-radius: 20%;
+    cursor: pointer;
+  }
+  
+  .checkmark:before,
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    background: #ffff;
+  }
+  
+  .checkmark:before {
+    top: 9px;
+    left: 4px;
+    width: 2px;
+    height: 6px;
+    transform: rotate(-45deg);
+  }
+  
+  .checkmark:after {
+    top: 9px;
+    left: 5px;
+    width: 14px;
+    height: 2px;
+    transform: rotate(-45deg);
+  }
+/* Checkmark Button */
+
+.service-box:hover {
+    background-color: rgb(245, 245, 245);
+}
+
+.price-info {
+    -webkit-border-top-left-radius: 20px;
+    -webkit-border-top-right-radius: 100px;
+    -moz-border-radius-topleft: 20px;
+    -moz-border-radius-topright: 100px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 100px;    
+    background-color: rgb(240, 240, 240);
+    position: fixed;
+    bottom: 0;
+}
+
