@@ -1,0 +1,17 @@
+hr {
+    width: 50% !important;
+    margin: 0 auto;
+}
+
+p {
+    font-family: "Roboto", sans-serif;
+}
+
+.category {
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.menu-icon {
+    margin-right: 1rem;
+}
