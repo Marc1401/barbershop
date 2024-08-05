@@ -1,0 +1,30 @@
+.category {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    text-decoration: underline;
+    margin-top: 2rem;
+    text-decoration-thickness: 1.2px;
+    text-underline-offset: 4px;
+}
+
+p {
+    font-family: "Roboto", sans-serif;   
+    font-weight: 300;
+}
+
+.service {
+    font-weight: 700;
+    font-size: larger;
+}
+
+.reservation p {
+    margin-bottom: 0px;
+}
+
+.reservation i {
+    margin-right: .5rem;
+}
+
+.price {
+    font-weight: 400;
+}
