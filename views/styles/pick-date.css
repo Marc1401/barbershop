@@ -3,11 +3,59 @@ body {
     height: 100%;
 }
 
+.date-box.current {
+    background-color: #0d6efd;
+}
+
 .date-box {
+    min-width: 90px;
+    width: 80px;
+    height: 80px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     color: white;
-    background-color: #0d6efd;
+    background-color: #000000;
+}
+
+.timeslots {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.time-select {
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    filter: drop-shadow(1px 4px 9px #bababa);
+}
+
+.time-select.selected {
+    background-color: #0060f2;
+}
+
+.time-select.selected > span {
+    color: white;
+}
+
+
+.date-select {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+    flex-direction: row;
+}
+
+.price-info {
+    -webkit-border-top-left-radius: 20px;
+    -webkit-border-top-right-radius: 100px;
+    -moz-border-radius-topleft: 20px;
+    -moz-border-radius-topright: 100px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 100px;    
+    background-color: rgb(240, 240, 240);
+    position: fixed;
+    bottom: 0;
 }
