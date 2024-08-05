@@ -1,0 +1,19 @@
+.welcome-message {
+    margin-top: 0px;
+    top: -8px;
+    position:relative;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+}
+
+p {
+    font-family: "Roboto", sans-serif;
+}
+
+.rotate {
+    transform: rotate(180deg);
+}
+
+.menu-icon {
+    margin-right: 2rem;
+}
